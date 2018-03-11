@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataNextSmallNumber", "KataNextSmallNumber\KataNextSmallNumber.csproj", "{B472B0F7-B4B7-45B8-84C8-7DCE98617F8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataNextSmallNumberTests1", "KataNextSmallNumberTests1\KataNextSmallNumberTests1.csproj", "{E7A9DA20-5815-4C8B-9EAE-33D65E25F16A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataNextSmallNumberTests", "KataNextSmallNumberTests1\KataNextSmallNumberTests.csproj", "{E7A9DA20-5815-4C8B-9EAE-33D65E25F16A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
