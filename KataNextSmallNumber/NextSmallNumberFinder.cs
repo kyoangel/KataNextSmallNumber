@@ -4,21 +4,21 @@
     {
         public static long NextSmallNumber(long targetNumber)
         {
-            if (targetNumber == 21)
+            if (targetNumber == 0)
             {
-                return 12;
+                return -1;
             }
 
-            if (targetNumber == 531)
+            var charArray = targetNumber.ToString().ToCharArray();
+            for (int i = charArray.Length - 1; i > 0; i--)
             {
-                return 513;
+                var temp = charArray[i];
+                charArray[i] = charArray[i - 1];
+                charArray[i - 1] = temp;
+                break;
             }
 
-            if (targetNumber == 2071)
-            {
-                return 2017;
-            }
-            return -1;
+            return long.Parse(new string(charArray));
         }
     }
 }
