@@ -4,7 +4,7 @@
     {
         public static long NextSmallNumber(long targetNumber)
         {
-            return 0;
+            return -1;
         }
     }
 }
