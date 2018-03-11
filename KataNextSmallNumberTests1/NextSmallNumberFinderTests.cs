@@ -35,6 +35,13 @@ namespace KataNextSmallNumber.Tests
             TheNextSmallNumberShouldBe(2017);
         }
 
+        [TestMethod()]
+        public void input_135_should_return_minus1()
+        {
+            GivenNumber(135);
+            TheNextSmallNumberShouldBe(-1);
+        }
+
         private static void TheNextSmallNumberShouldBe(int expected)
         {
             Assert.AreEqual(expected, _smallNumber);
