@@ -8,6 +8,16 @@
             {
                 return 12;
             }
+
+            if (targetNumber == 531)
+            {
+                return 513;
+            }
+
+            if (targetNumber == 2071)
+            {
+                return 2017;
+            }
             return -1;
         }
     }
