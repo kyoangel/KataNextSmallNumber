@@ -8,10 +8,17 @@ namespace KataNextSmallNumber.Tests
         private static long _smallNumber;
 
         [TestMethod()]
-        public void TestNextSmallNumber_input_zero_should_return_minus1()
+        public void input_zero_should_return_minus1()
         {
             GivenNumber(0);
             TheNextSmallNumberShouldBe(-1);
+        }
+
+        [TestMethod()]
+        public void input_21_should_return_12()
+        {
+            GivenNumber(21);
+            TheNextSmallNumberShouldBe(12);
         }
 
         private static void TheNextSmallNumberShouldBe(int expected)
