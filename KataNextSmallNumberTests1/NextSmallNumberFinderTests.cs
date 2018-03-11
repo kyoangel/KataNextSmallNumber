@@ -5,12 +5,23 @@ namespace KataNextSmallNumber.Tests
     [TestClass()]
     public class NextSmallNumberFinderTests
     {
+        private static long _smallNumber;
+
         [TestMethod()]
         public void TestNextSmallNumber_input_zero_should_return_minus1()
         {
-            var actual = NextSmallNumberFinder.NextSmallNumber(0);
-            var expected = -1;
-            Assert.AreEqual(expected, actual);
+            GivenNumber(0);
+            TheNextSmallNumberShouldBe(-1);
+        }
+
+        private static void TheNextSmallNumberShouldBe(int expected)
+        {
+            Assert.AreEqual(expected, _smallNumber);
+        }
+
+        private static void GivenNumber(int targetNumber)
+        {
+            _smallNumber = NextSmallNumberFinder.NextSmallNumber(targetNumber);
         }
     }
 }
