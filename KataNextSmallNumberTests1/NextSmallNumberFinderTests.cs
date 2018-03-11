@@ -42,6 +42,27 @@ namespace KataNextSmallNumber.Tests
             TheNextSmallNumberShouldBe(-1);
         }
 
+        [TestMethod()]
+        public void input_111_should_return_minus1()
+        {
+            GivenNumber(111);
+            TheNextSmallNumberShouldBe(-1);
+        }
+
+        [TestMethod()]
+        public void input_907_should_return_790()
+        {
+            GivenNumber(907);
+            TheNextSmallNumberShouldBe(790);
+        }
+
+        [TestMethod()]
+        public void input_1027_should_return_minus1()
+        {
+            GivenNumber(1027);
+            TheNextSmallNumberShouldBe(-1);
+        }
+
         private static void TheNextSmallNumberShouldBe(int expected)
         {
             Assert.AreEqual(expected, _smallNumber);
